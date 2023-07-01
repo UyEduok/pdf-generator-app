@@ -14,9 +14,12 @@ for index, row in df.iterrows():
     # Add a new page to the PDF
     pdf.add_page()
 
-    # Set text color and draw a line
+    # Set text color
     pdf.set_text_color(100, 100, 100)
-    pdf.line(10, 21, 200, 21)
+
+    # draw a line
+    for i in range(20, 292, 10):
+        pdf.line(10, i, 200, i)
 
     # Set font and add the topic title as a cell
     pdf.set_font(family='Times', style='B', size=12)
@@ -37,6 +40,10 @@ for index, row in df.iterrows():
         pdf.set_text_color(180, 180, 180)
         pdf.set_font(family='Times', style='I', size=8)
         pdf.cell(w=0, h=10, txt=row['Topic'], align='R', ln=1)
+
+        # draw a line
+        for i in range(10, 292, 10):
+            pdf.line(10, i, 200, i)
 
 # Output the PDF file
 pdf.output('output.pdf')
