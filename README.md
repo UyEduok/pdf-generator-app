@@ -11,7 +11,7 @@ Installation
 
 Clone the repository:
 
-git clone https://github.com/Uy-Eduok/pdf-generator-app.git
+git clone https://github.com/UyEduok/pdf-generator-app
 
 Install the required dependencies:
 
