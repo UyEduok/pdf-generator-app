@@ -19,15 +19,11 @@ pip install -r requirements.txt
 
 Run the application:
 
-python app.py
+python main.py
 
 Requirements
 
 The application requires Python 3.6 or later. All the necessary dependencies are listed in the requirements.txt file.
-
-License
-
-This project is licensed under the MIT License.
 
 Contributing
 
